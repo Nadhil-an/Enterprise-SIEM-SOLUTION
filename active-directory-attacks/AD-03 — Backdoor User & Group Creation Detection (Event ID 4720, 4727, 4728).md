@@ -70,10 +70,10 @@ Category  : Account Management
 Message   : A user account was created
 ```
 
-**Screenshot — Backdoor User Creation & Verification (PowerShell):**
+**Backdoor User Creation & Verification (PowerShell):**
 
 <p align="center">
-  <img src="../assets/ad03-user-creation.png" width="700">
+  <img src="../assets/ad-newusercreation1.png" width="700">
 </p>
 
 ---
@@ -108,7 +108,7 @@ Message   : A security-enabled global group was created
 **Screenshot — Security Group Creation & Verification (PowerShell):**
 
 <p align="center">
-  <img src="../assets/ad03-group-creation.png" width="700">
+  <img src="../assets/ad-groupcreation5.png" width="700">
 </p>
 
 ---
@@ -130,10 +130,10 @@ Category  : Account Management
 Message   : A member was added to a security-enabled global group
 ```
 
-**Screenshot — User Added to Group (PowerShell + Splunk Detection):**
+** User Added to Group (PowerShell + Splunk Detection):**
 
 <p align="center">
-  <img src="../assets/ad03-group-member-add.png" width="700">
+  <img src="../assets/ad-addinguserintogroup7.png" width="700">
 </p>
 
 ---
@@ -171,7 +171,7 @@ index=windows EventCode=4720
 **Screenshot — Splunk Detection (Event ID 4720):**
 
 <p align="center">
-  <img src="../assets/ad03-splunk-4720.png" width="700">
+  <img src="../assets/ad-createusersplunk4.png" width="700">
 </p>
 
 ---
@@ -189,7 +189,7 @@ index=windows EventCode=4727
 - Which account created the group
 - Timestamp and originating domain controller
 
-**Screenshot — Splunk Detection (Event ID 4727):**
+** Splunk Detection (Event ID 4727):**
 
 <p align="center">
   <img src="../assets/4727.png" width="700">
@@ -210,10 +210,10 @@ index=windows EventCode=4728
 - Who performed the action
 - Confirms privilege assignment step of the persistence chain
 
-**Screenshot — Splunk Detection (Event ID 4728):**
+Splunk Detection (Event ID 4728):**
 
 <p align="center">
-  <img src="../assets/ad03-splunk-4728.png" width="700">
+  <img src="../assets/ad-addinguserintogroupsplunk8.png" width="700">
 </p>
 
 ---
@@ -385,8 +385,6 @@ This simulation demonstrates that Living-off-the-Land techniques using native AD
 
 - [AD-01 — Brute Force RDP Detection (Event ID 4625)](../AD-01_Brute_Force_RDP_4625.md)
 - [AD-02 — Account Lockout Detection (Event ID 4740)](../AD-02_Account_Lockout_4740.md)
-- [E4 — Local Privilege Escalation via Administrators Group](../../endpoint-attacks/E4_Privilege_Escalation_4732.md)
-
 ---
 
 *Lab environment: Active Directory on AWS EC2 Windows Server | Splunk Free | Author: [Nadil](https://github.com/Nadhil-an)*
